@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>
+            Family Book
+        </title>
+    </head>
+   <center>
+     <h4 id="family_name"></h4>
+    <img src="https://www.pngall.com/wp-content/uploads/2017/03/Family-Free-Download-PNG.png" width="300" height="300" id="family_member">
+    <button onclick="update();">Next</button>
+</center>
+
+    <script >
+var images =
+["https://www.pngall.com/wp-content/uploads/2017/03/Family-Free-Download-PNG.png", 
+"https://www.pinclipart.com/picdir/middle/561-5612139_dad-clipart-png-download.png",
+"https://www.pinclipart.com/picdir/middle/21-211056_png-mother-only-transparent-warioware-9-volt-mom.png",
+"https://www.e-simcha.com/wp-content/uploads/2021/02/iconfinder_Sister_3231120.png",
+"https://cdn5.vectorstock.com/i/1000x1000/18/84/brother-flat-vector-23821884.jpg"]
+ 
+var names =
+["family book", 
+"my dad",
+"my mom",
+"me",
+"my brother"]
+  
+var i = 0;
+function update() {
+ 
+i++;
+
+var members_array = 5 
+ if(i > members_array)
+{
+    i = 0;
+}
+var updatedImage = images[i];
+var updatedName = names[i];
+document.getElementById("family_member").src = updatedImage;
+document.getElementById("family_name").innerHTML = updatedName;
+}
+ </script>
+</html>
